@@ -37,7 +37,7 @@ Observações:
   }
 
   // Registro de autoload simples sem Composer
-  /*
+
   spl_autoload_register(function ($class) {
 
       $path = 'src/' . str_replace('\\', '/', $class) . '.php';
@@ -45,13 +45,13 @@ Observações:
           require $path;
       }
   });
-  */
+
   // Comando para rodar todos os teste
   // php /vendor/bin/phpunit
   // Registro de autoload com Composer 
   // - composer install
   // - composer dump-autoload
-  require 'vendor/autoload.php';
+  // require 'vendor/autoload.php';
 
   // instacia do servidor
   $serve= new Serve();
@@ -97,4 +97,5 @@ Observações:
       default:
           show_message("ABOUT");
           break;
+
   }
