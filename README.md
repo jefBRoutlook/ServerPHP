@@ -1,6 +1,5 @@
 # ServerPHP
 
-
 Script php gerenciando servidor embutido php.
 
 # README
@@ -103,3 +102,11 @@ Processo: para o servidor, espera, inicia novamente, mostra mensagens de status
 
 Mostrar configuração completa
 php servidor.php config
+
+OBSERVAÇÕES RÁPIDAS
+
+- O script roda somente em Linux, check o php.ini
+- O servidor embutido é para desenvolvimento; não use em produção.
+- O script depende de Composer e do autoload (vendor/autoload.php).
+- Certifique-se de que a classe Serve e seus métodos (on, off, status, set, etc.) estão disponíveis.
+
